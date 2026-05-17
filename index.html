@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zetao Yang | Personal Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zetao Yang — Reinforcement learning, efficient attention, and structured inductive biases. Undergraduate at BIT, incoming MSc at NTU, Algorithm Intern at Humanlaya AI.">
+  <meta name="keywords" content="Zetao Yang, 杨泽涛, Humanlaya, ByteDance Seed, PhysEDA, NeurIPS 2026, linear attention, eval-train loop, RL4CO">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="brand">Zetao Yang</div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#biography">Biography</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Zetao Yang <span class="cn">杨泽涛</span></h1>
+      <p class="subtitle">Algorithm Intern @ Humanlaya AI · Eval-train loops · Population dynamics</p>
+      <div class="quote">
+        $$\begin{cases} -\partial_t u + H(x, \nabla u, m) = 0 \\[2pt] \phantom{-}\partial_t m - \mathrm{div}\bigl(m\, \nabla_p H\bigr) = 0 \end{cases}$$
+        <div class="quote-caption">Mean Field Games — the lens that first drew me to <em>populations of agents under shared dynamics</em>. Still the way I think about evaluation, environments, and what we mean by "the policy."</div>
+      </div>
+    </div>
+    <div class="profile-placeholder">杨</div>
+    <!-- When you have a profile photo, replace the above with:
+         <img src="assets/profile.jpg" alt="Zetao Yang" class="profile-img"> -->
+  </div>
+
+  <!-- ============ BIOGRAPHY ============ -->
+  <div class="section" id="biography">
+    <h2><i class="fas fa-user"></i> Biography</h2>
+    <p class="bio-text">
+      I'm an undergraduate mathematics researcher at <a href="https://english.bit.edu.cn/" target="_blank">Beijing Institute of Technology</a>'s
+      <em>Strong Foundation Program in Mathematics & Applied Mathematics</em> — a track designed for students pursuing research in pure and applied
+      mathematics. National Second Prize, China University Students' Mathematics Competition (Group A, 2024).
+      My interests sit at the intersection of <strong>reinforcement learning</strong>,
+      <strong>dynamic systems on populations</strong>, and <strong>the design of environments for learning</strong>.
+    </p>
+    <p class="bio-text">
+      I work on injecting structured priors — Manhattan-distance decay, graph topology, evaluation signal —
+      into attention and training pathways. But underneath the technique, I'm more fundamentally interested in
+      a thesis that <em>environments shape learning more than algorithms do</em>: RL is less about optimising
+      a policy network than about defining the right environment, a cheap-but-confident reward, and the
+      uncertainty band we choose to live with. Top-down beats bottom-up; less is often more.
+    </p>
+    <p class="bio-text">
+      From June 2026 I join <a href="https://humanlaya.com/" target="_blank">Humanlaya AI</a> as Algorithm Intern (remote),
+      working on <strong>eval-train loops</strong> under <a href="https://randomtutu.github.io/" target="_blank">Zhoufutu Wen</a>.
+      I am advised by Prof. Niu Lingfeng and Prof. Shen Xin (UCAS), and Prof. Li Qingna (BIT).
+      In September 2026 I start my MSc in Signal Processing & Machine Learning at
+      <a href="https://www.ntu.edu.sg/" target="_blank">Nanyang Technological University</a>.
+    </p>
+    <div class="bio-grid">
+      <div class="bio-card">
+        <h4>Research Interests</h4>
+        <div class="interest-tags">
+          <span class="interest-tag">Environment & Reward Design</span>
+          <span class="interest-tag">Eval-Train Loops</span>
+          <span class="interest-tag">Population Dynamics · MFG</span>
+          <span class="interest-tag">Reinforcement Learning</span>
+          <span class="interest-tag">Linear & Efficient Attention</span>
+          <span class="interest-tag">Uncertainty Quantification</span>
+        </div>
+      </div>
+      <div class="bio-card">
+        <h4>Contact</h4>
+        <div class="contact-links">
+          <button onclick="copyEmail()" class="contact-btn" id="email-btn">
+            <i class="fas fa-envelope"></i> Email
+          </button>
+          <a href="https://github.com/CoolTao-Yang" target="_blank" class="contact-btn">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://arxiv.org/abs/2605.10547" target="_blank" class="contact-btn">
+            <i class="fas fa-file-pdf"></i> arXiv
+          </a>
+          <a href="https://scholar.google.com/scholar?q=Zetao+Yang+PhysEDA" target="_blank" class="contact-btn">
+            <i class="fas fa-graduation-cap"></i> Scholar
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ RESEARCH ============ -->
+  <div class="section" id="research">
+    <h2><i class="fas fa-flask"></i> Research</h2>
+    <p class="research-thesis">
+      <strong>A working thesis:</strong> <em>environments shape learning more than algorithms do</em>.
+      Define a useful environment, choose a cheap-but-confident reward, and control the uncertainty
+      band you live with — the policy follows.
+    </p>
+    <p class="bio-text">
+      At the tactical level I work on a recurring theme I call <em>"more information for enhanced attention"</em> —
+      injecting structured priors (spatial geometry, graph topology, evaluation feedback) as multiplicative bias on
+      attention and training pathways, so that weak signals become visible and learnable. The priors I use change
+      with the problem family; the principle does not.
+    </p>
+    <p class="bio-text" style="margin-bottom:0;">Specific topics:</p>
+    <ol class="research-list">
+      <li class="research-item">
+        <div class="research-title">Environment design for evaluation & training</div>
+        <div class="research-desc">
+          Treating evaluation signal as the auxiliary information that defines a useful learning environment.
+          How do we turn failure cases, capability profiles, and bench-derived rubrics into training-time
+          gradient signal? Forthcoming at <a href="https://humanlaya.com/" target="_blank">Humanlaya AI</a> (Jun 2026).
+        </div>
+      </li>
+      <li class="research-item">
+        <div class="research-title">Population dynamics & Mean Field Games</div>
+        <div class="research-desc">
+          A long-standing mathematical interest. I worry that pure ML approaches under-use the language of
+          coupled HJB / Fokker-Planck systems for populations of agents under shared dynamics — both in
+          evaluation (where agent behaviour is necessarily collective) and in eval-train co-design.
+        </div>
+      </li>
+      <li class="research-item">
+        <div class="research-title">RL: define the environment, not the policy</div>
+        <div class="research-desc">
+          I'm sceptical of architecture-tinkering RL. Most leverage comes from defining the right environment,
+          a cheap-but-confident reward, and a tractable uncertainty band — measured via AB tests, KL divergence,
+          and statistical hypothesis testing. Less is more; from large to small.
+        </div>
+      </li>
+      <li class="research-item">
+        <div class="research-title">Structured priors for attention</div>
+        <div class="research-desc">
+          Injecting Manhattan-distance decay, graph topology, or evaluation feedback as multiplicative bias
+          on the attention kernel. Cuts complexity (O(L²) → O(L)) while preserving the problem's physics or topology.
+          Representative work: <a href="https://arxiv.org/abs/2605.10547" target="_blank">PhysEDA</a>
+          (<span class="venue">NeurIPS 2026 submission, under review</span>).
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <!-- ============ NEWS ============ -->
+  <div class="section" id="news">
+    <h2><i class="fas fa-bullhorn"></i> News</h2>
+    <ul class="news-list">
+      <li class="news-item">
+        <div class="news-date">2026-06</div>
+        <div class="news-text">
+          Joining <a href="https://humanlaya.com/" target="_blank"><strong>Humanlaya AI</strong></a> as Algorithm Intern (remote) — working on training methodologies for eval-train loop research.
+        </div>
+      </li>
+      <li class="news-item">
+        <div class="news-date">2026-05</div>
+        <div class="news-text">
+          Submitted <em>PhysEDA</em> to <span class="venue">NeurIPS 2026</span>; preprint on <a href="https://arxiv.org/abs/2605.10547" target="_blank">arXiv</a>.
+        </div>
+      </li>
+      <li class="news-item">
+        <div class="news-date">2026-03</div>
+        <div class="news-text">
+          Joined <strong>ByteDance Seed</strong> (Foundation Model Team) as Evaluation Algorithm Intern; led the PostEvalAgent project.
+        </div>
+      </li>
+      <li class="news-item">
+        <div class="news-date">2026-02</div>
+        <div class="news-text">
+          Attended the <em>AI Industrial Applications (AIIA)</em> program at <strong>RWTH Aachen University</strong>; discussed attention-mechanism design with senior faculty and received endorsement of the <em>"more information for weak attention"</em> framing.
+        </div>
+      </li>
+      <li class="news-item">
+        <div class="news-date">2025-09</div>
+        <div class="news-text">
+          Joint Academic Symposium with the University of Tokyo and Keio University on Mean Field Game and reinforcement learning.
+        </div>
+      </li>
+      <li class="news-item">
+        <div class="news-date">2025-01</div>
+        <div class="news-text">
+          NUS Winter Program on AI &amp; Generative Large Models — healthcare track.
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <div class="section" id="publications">
+    <h2><i class="fas fa-book"></i> Publications</h2>
+    <div class="pub-card">
+      <div class="pub-title">PhysEDA: Physics-Aware Learning Framework for Efficient EDA with Manhattan Distance Decay</div>
+      <div class="pub-authors"><span class="me">Zetao Yang</span>, Xin Shen, Lingfeng Niu, Qingna Li</div>
+      <div class="pub-venue">Submitted to <span class="venue-name">NeurIPS 2026</span> (Submission #18672, under review)</div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2605.10547" target="_blank" class="pub-link">arXiv</a>
+      </div>
+      <p class="pub-abstract">
+        A unified physics-aware framework injecting Manhattan-distance decay into both the architecture
+        (<strong>PSLA</strong> — linear attention) and the training stage (<strong>PBRS</strong> — reward shaping).
+        Achieves <strong>14× inference speedup</strong> and <strong>98.5% memory savings</strong> on 100×100 grids;
+        <strong>+49.1%</strong> on decoupling-capacitor RL placement; <strong>+56.8%</strong> zero-shot cross-scale transfer;
+        <strong>−12.0% HPWL</strong> on macro placement; <strong>+5.3–5.4%</strong> Pearson on IR-drop prediction.
+      </p>
+    </div>
+  </div>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <div class="section" id="experience">
+    <h2><i class="fas fa-briefcase"></i> Experience</h2>
+
+    <div class="timeline-card">
+      <div class="timeline-head">
+        <div class="timeline-title"><a href="https://humanlaya.com/" target="_blank">Humanlaya AI</a> (remote)</div>
+        <div class="timeline-date">Jun 2026 – present</div>
+      </div>
+      <div class="timeline-role">Algorithm Intern (incoming)</div>
+      <div class="timeline-body">
+        Joining the eval-train loop research line at Humanlaya AI — the team behind
+        <a href="https://github.com/humanlaya/OneMillion-Bench" target="_blank">$OneMillion-Bench</a>,
+        a bilingual realistic expert-level benchmark across 5 professional domains.
+        Focus: training methodologies that turn evaluation signals into capability improvements.
+      </div>
+    </div>
+
+    <div class="timeline-card">
+      <div class="timeline-head">
+        <div class="timeline-title">ByteDance — Seed (Foundation Model Team)</div>
+        <div class="timeline-date">Dec 2025 – May 2026</div>
+      </div>
+      <div class="timeline-role">Evaluation Algorithm Intern</div>
+      <div class="timeline-body">
+        <ul>
+          <li>Led the <strong>PostEvalAgent</strong> product through three architectural transitions:
+            <em>LangChain workflow → MCP server → opencode-based sandbox (production env) → CLI for tool refresh</em>.
+            Built on a two-agent design (main orchestrator + data-retrieval sub-agent with RAG over NAS/Redis/TOS);
+            shipped 50+ analysis modules across 4 internal business lines.</li>
+          <li>Designed <strong>MPAE</strong> (Multi-Path Agent Evaluation): graph-based abstraction of agent execution
+            traces; quantified deviation from optimal paths via Conditional Transfer Entropy and Jensen–Shannon
+            divergence; failure-mode clustering with TRAIL + Weisfeiler–Lehman graph kernel.</li>
+          <li>Deep familiarity with Seed's code-agent benchmark infrastructure
+            (training-data curation, multi-turn rollout evaluation, capability regression tracking).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-card">
+      <div class="timeline-head">
+        <div class="timeline-title">Edgenesis</div>
+        <div class="timeline-date">Jun 2025 – Aug 2025</div>
+      </div>
+      <div class="timeline-role">Edge Large Model Algorithm Intern</div>
+      <div class="timeline-body">
+        Led prompt engineering and logic-flow reconfiguration of the core product <em>IoT-Driver-Copilot</em>,
+        improving task execution efficiency by 30%+ via optimising the bidirectional protocol generation.
+        Designed and deployed a GPS digital-twin program on Raspberry Pi with two-way device/cloud sync.
+      </div>
+    </div>
+
+    <div class="timeline-card">
+      <div class="timeline-head">
+        <div class="timeline-title">TOGEEK</div>
+        <div class="timeline-date">Feb 2025 – May 2025</div>
+      </div>
+      <div class="timeline-role">Algorithm Engineer Intern</div>
+      <div class="timeline-body">
+        RL-based optimisation for cooperative energy storage and photovoltaic generation;
+        defined state/action/reward and implemented the full training pipeline.
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ EDUCATION ============ -->
+  <div class="section" id="education">
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+
+    <div class="timeline-card">
+      <div class="timeline-head">
+        <div class="timeline-title">Nanyang Technological University, Singapore</div>
+        <div class="timeline-date">Aug 2026 – Aug 2027 (incoming)</div>
+      </div>
+      <div class="timeline-role">MSc, Signal Processing &amp; Machine Learning (with Industrial Attachment)</div>
+    </div>
+
+    <div class="timeline-card">
+      <div class="timeline-head">
+        <div class="timeline-title">Beijing Institute of Technology, China</div>
+        <div class="timeline-date">Sep 2022 – Jun 2026</div>
+      </div>
+      <div class="timeline-role">BSc, Mathematics &amp; Applied Mathematics (Strong Foundation Program)</div>
+    </div>
+  </div>
+
+  <!-- ============ AWARDS ============ -->
+  <div class="section" id="awards">
+    <h2><i class="fas fa-award"></i> Awards &amp; Activities</h2>
+    <ul class="awards-list">
+      <li>
+        <span class="award-title">Honorable Mention</span>, Mathematical Contest in Modeling (MCM)
+        <span class="award-year">2025</span>
+        <span class="award-topic">A Multi-Objective Optimisation Model for Sustainable Tourism Development</span>
+      </li>
+      <li>
+        <span class="award-title">National Second Prize</span>, National Statistical Modelling Competition
+        <span class="award-year">2025</span>
+        <span class="award-topic">Spatial Reconfiguration of Tourism in Harbin under the "Internet Celebrity Effect"</span>
+      </li>
+      <li>
+        <span class="award-title">National Second Prize</span>, 15th China University Students' Math Competition (Group A)
+        <span class="award-year">2024</span>
+      </li>
+      <li>
+        <span class="award-title">National 3rd Prize &amp; Provincial 1st Prize</span>, National Statistical Modelling Competition
+        <span class="award-year">2024</span>
+        <span class="award-topic">AHP-CRITIC Comprehensive Vitality Index of AI across Chinese Provinces</span>
+      </li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>Last updated: May 2026 · Built with vanilla HTML/CSS · Source on <a href="https://github.com/CoolTao-Yang/CoolTao-Yang.github.io" target="_blank">GitHub</a> · Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+  </footer>
+
+</div>
+
+<!-- KaTeX render -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {delimiters: [{left:'$$',right:'$$',display:false},{left:'$',right:'$',display:false}]});"></script>
+
+<!-- Navbar scroll shadow + mobile menu + copy email -->
+<script>
+  window.addEventListener('scroll', () => {
+    document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 10);
+  });
+  const hb = document.getElementById('hamburger');
+  const nl = document.getElementById('nav-links');
+  hb.addEventListener('click', () => {
+    hb.classList.toggle('active');
+    nl.classList.toggle('active');
+  });
+  nl.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    hb.classList.remove('active');
+    nl.classList.remove('active');
+  }));
+
+  function copyEmail() {
+    const email = 'zetao2100@gmail.com';
+    const btn = document.getElementById('email-btn');
+    const originalHTML = btn.innerHTML;
+    navigator.clipboard.writeText(email).then(() => {
+      btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+      setTimeout(() => { btn.innerHTML = originalHTML; }, 2000);
+    }).catch(() => {
+      // Clipboard API unavailable (e.g. http) — fall back to manual
+      btn.innerHTML = '<i class="fas fa-envelope"></i> ' + email;
+      setTimeout(() => { btn.innerHTML = originalHTML; }, 4000);
+    });
+  }
+</script>
+
+</body>
+</html>

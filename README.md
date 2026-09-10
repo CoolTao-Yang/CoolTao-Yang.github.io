@@ -6,7 +6,7 @@ Personal research and career homepage, published at **https://CoolTao-Yang.githu
 
 - `index.html` — biography, research interests, news, preprints, experience, education, and awards.
 - `style.css` — existing responsive layout and theme.
-- `assets/profile.jpg` — profile photo.
+- `assets/profile-2026-09-10.png` — selected professional portrait, kept in its original PNG format.
 
 The site is static HTML, CSS, and JavaScript. It uses Inter, Font Awesome, and KaTeX from external CDNs; there is no build step.
 

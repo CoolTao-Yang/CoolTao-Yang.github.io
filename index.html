@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>Zetao Yang | Personal Homepage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Zetao Yang — Reinforcement learning, efficient attention, and structured inductive biases. Undergraduate at BIT, incoming MSc at NTU, Algorithm Intern at Humanlaya AI.">
-  <meta name="keywords" content="Zetao Yang, 杨泽涛, Humanlaya, ByteDance Seed, PhysEDA, NeurIPS 2026, linear attention, eval-train loop, RL4CO">
+  <meta name="description" content="Zetao Yang — AI Scientist Intern at Apodex (Shanda Group) and MSc student at NTU. LLM and agent evaluation, benchmark reliability, synthetic data quality, and physics-aware learning.">
+  <meta name="keywords" content="Zetao Yang, 杨泽涛, Apodex, Shanda Group, NTU, Humanlaya, ByteDance Seed, PhysEDA, agent evaluation, benchmark reliability, synthetic data, reinforcement learning">
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
       <li><a href="#biography">Biography</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#news">News</a></li>
-      <li><a href="#publications">Publications</a></li>
+      <li><a href="#publications">Preprints</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
     </ul>
@@ -39,7 +39,7 @@
   <div class="hero">
     <div class="hero-text">
       <h1>Zetao Yang <span class="cn">杨泽涛</span></h1>
-      <p class="subtitle">Algorithm Intern @ Humanlaya AI · Eval-train loops · Population dynamics</p>
+      <p class="subtitle">AI Scientist Intern @ Apodex · MSc Student @ NTU · Singapore</p>
       <div class="quote">
         $$\begin{cases} -\partial_t u + H(x, \nabla u, m) = 0 \\[2pt] \phantom{-}\partial_t m - \mathrm{div}\bigl(m\, \nabla_p H\bigr) = 0 \end{cases}$$
         <div class="quote-caption">Mean Field Games — the lens that first drew me to <em>populations of agents under shared dynamics</em>. Still the way I think about evaluation, environments, and what we mean by "the policy."</div>
@@ -52,36 +52,35 @@
   <div class="section" id="biography">
     <h2><i class="fas fa-user"></i> Biography</h2>
     <p class="bio-text">
-      I'm an undergraduate mathematics researcher at <a href="https://english.bit.edu.cn/" target="_blank">Beijing Institute of Technology</a>'s
-      <em>Strong Foundation Program in Mathematics & Applied Mathematics</em> — a track designed for students pursuing research in pure and applied
-      mathematics. National Second Prize, China University Students' Mathematics Competition (Group A, 2024).
-      My interests sit at the intersection of <strong>reinforcement learning</strong>,
-      <strong>dynamic systems on populations</strong>, and <strong>the design of environments for learning</strong>.
+      I am an <strong>AI Scientist Intern at Apodex (Shanda Group)</strong> and an MSc student in
+      <strong>Signal Processing &amp; Machine Learning</strong> at
+      <a href="https://www.ntu.edu.sg/" target="_blank">Nanyang Technological University</a> in Singapore.
+      I work on evaluating LLMs and agents, understanding why they fail, and building benchmarks that produce trustworthy results.
     </p>
     <p class="bio-text">
-      I work on injecting structured priors — Manhattan-distance decay, graph topology, evaluation signal —
-      into attention and training pathways. But underneath the technique, I'm more fundamentally interested in
-      a thesis that <em>environments shape learning more than algorithms do</em>: RL is less about optimising
-      a policy network than about defining the right environment, a cheap-but-confident reward, and the
-      uncertainty band we choose to live with. Top-down beats bottom-up; less is often more.
+      At <strong>ByteDance Seed</strong>, I developed tools for agent evaluation and failure diagnosis,
+      including structured analysis of execution traces and an MCP-based post-evaluation agent.
+      At <strong>Humanlaya AI</strong>, I worked on document-based task synthesis, evidence provenance,
+      rubric auditing, and reproducible evaluation workflows. I enjoy turning ambiguous evaluation problems
+      into explicit assumptions, controlled comparisons, and reusable tools.
     </p>
     <p class="bio-text">
-      From June 2026 I join <a href="https://humanlaya.com/" target="_blank">Humanlaya AI</a> as Algorithm Intern (remote),
-      working on <strong>eval-train loops</strong> under <a href="https://randomtutu.github.io/" target="_blank">Zhoufutu Wen</a>.
-      I am advised by Prof. Niu Lingfeng and Prof. Shen Xin (UCAS), and Prof. Li Qingna (BIT).
-      In September 2026 I start my MSc in Signal Processing & Machine Learning at
-      <a href="https://www.ntu.edu.sg/" target="_blank">Nanyang Technological University</a>.
+      I hold a BSc in Mathematics &amp; Applied Mathematics from
+      <a href="https://english.bit.edu.cn/" target="_blank">Beijing Institute of Technology</a>'s
+      Strong Foundation Program. I am the sole author of
+      <a href="https://arxiv.org/abs/2605.10547" target="_blank">PhysEDA</a>, an arXiv preprint on physics-aware learning
+      for electronic design automation, with research supervision from Prof. Lingfeng Niu, Prof. Xin Shen, and Prof. Qingna Li.
     </p>
     <div class="bio-grid">
       <div class="bio-card">
         <h4>Research Interests</h4>
         <div class="interest-tags">
-          <span class="interest-tag">Environment & Reward Design</span>
-          <span class="interest-tag">Eval-Train Loops</span>
-          <span class="interest-tag">Population Dynamics · MFG</span>
+          <span class="interest-tag">LLM &amp; Agent Evaluation</span>
+          <span class="interest-tag">Benchmark Reliability</span>
+          <span class="interest-tag">Synthetic Data Quality</span>
           <span class="interest-tag">Reinforcement Learning</span>
           <span class="interest-tag">Linear & Efficient Attention</span>
-          <span class="interest-tag">Uncertainty Quantification</span>
+          <span class="interest-tag">Failure Attribution</span>
         </div>
       </div>
       <div class="bio-card">
@@ -92,6 +91,9 @@
           </button>
           <a href="https://github.com/CoolTao-Yang" target="_blank" class="contact-btn">
             <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/zetao-yang/" target="_blank" class="contact-btn">
+            <i class="fab fa-linkedin"></i> LinkedIn
           </a>
           <a href="https://arxiv.org/abs/2605.10547" target="_blank" class="contact-btn">
             <i class="fas fa-file-pdf"></i> arXiv
@@ -108,49 +110,47 @@
   <div class="section" id="research">
     <h2><i class="fas fa-flask"></i> Research</h2>
     <p class="research-thesis">
-      <strong>A working thesis:</strong> <em>environments shape learning more than algorithms do</em>.
-      Define a useful environment, choose a cheap-but-confident reward, and control the uncertainty
-      band you live with — the policy follows.
+      <strong>A guiding question:</strong> How can we tell whether an agent has improved,
+      and whether the evaluation itself deserves our confidence?
     </p>
     <p class="bio-text">
-      At the tactical level I work on a recurring theme I call <em>"more information for enhanced attention"</em> —
-      injecting structured priors (spatial geometry, graph topology, evaluation feedback) as multiplicative bias on
-      attention and training pathways, so that weak signals become visible and learnable. The priors I use change
-      with the problem family; the principle does not.
+      My work connects evaluation design, failure attribution, and data provenance.
+      I use controlled comparisons and reproducible workflows to separate model limitations from benchmark defects.
+      My mathematics background also informs an interest in structured physical priors, efficient attention,
+      and environment and reward design for reinforcement learning.
     </p>
     <p class="bio-text" style="margin-bottom:0;">Specific topics:</p>
     <ol class="research-list">
       <li class="research-item">
-        <div class="research-title">Environment design for evaluation & training</div>
+        <div class="research-title">Benchmark reliability and controlled evaluation</div>
         <div class="research-desc">
-          Treating evaluation signal as the auxiliary information that defines a useful learning environment.
-          How do we turn failure cases, capability profiles, and bench-derived rubrics into training-time
-          gradient signal? Forthcoming at <a href="https://humanlaya.com/" target="_blank">Humanlaya AI</a> (Jun 2026).
+          Designing matched comparisons and auditing scoring rubrics to distinguish agent failures
+          from conversion defects, answer leakage, and inconsistent evaluation criteria.
         </div>
       </li>
       <li class="research-item">
-        <div class="research-title">Population dynamics & Mean Field Games</div>
+        <div class="research-title">Agent failure attribution</div>
         <div class="research-desc">
-          A long-standing mathematical interest. I worry that pure ML approaches under-use the language of
-          coupled HJB / Fokker-Planck systems for populations of agents under shared dynamics — both in
-          evaluation (where agent behaviour is necessarily collective) and in eval-train co-design.
+          Representing execution traces as decision graphs, developing failure taxonomies,
+          and combining statistical attribution, graph-pattern mining, and targeted perturbations
+          to investigate recurring failures.
         </div>
       </li>
       <li class="research-item">
-        <div class="research-title">RL: define the environment, not the policy</div>
+        <div class="research-title">Reproducible synthetic tasks</div>
         <div class="research-desc">
-          I'm sceptical of architecture-tinkering RL. Most leverage comes from defining the right environment,
-          a cheap-but-confident reward, and a tractable uncertainty band — measured via AB tests, KL divergence,
-          and statistical hypothesis testing. Less is more; from large to small.
+          Building document-based workspaces and tasks with source-evidence mappings, schema-backed generation,
+          temporal-consistency checks, and reproducible outputs. Making data provenance and quality controls
+          explicit throughout the evaluation workflow.
         </div>
       </li>
       <li class="research-item">
         <div class="research-title">Structured priors for attention</div>
         <div class="research-desc">
-          Injecting Manhattan-distance decay, graph topology, or evaluation feedback as multiplicative bias
-          on the attention kernel. Cuts complexity (O(L²) → O(L)) while preserving the problem's physics or topology.
+          Incorporating physical priors into linear attention and reward shaping for reinforcement learning.
+          In PhysEDA, separable Manhattan-distance decay reduces attention complexity from O(L²) to O(L).
           Representative work: <a href="https://arxiv.org/abs/2605.10547" target="_blank">PhysEDA</a>
-          (<span class="venue">NeurIPS 2026 submission, under review</span>).
+          (<span class="venue">arXiv preprint, 2026</span>).
         </div>
       </li>
     </ol>
@@ -161,28 +161,34 @@
     <h2><i class="fas fa-bullhorn"></i> News</h2>
     <ul class="news-list">
       <li class="news-item">
+        <div class="news-date">2026-09</div>
+        <div class="news-text">Joined <strong>Apodex (Shanda Group)</strong> as an AI Scientist Intern in Singapore.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-date">2026-08</div>
+        <div class="news-text">Started the MSc in Signal Processing &amp; Machine Learning at <strong>Nanyang Technological University</strong>.</div>
+      </li>
+      <li class="news-item">
         <div class="news-date">2026-06</div>
         <div class="news-text">
-          Joining <a href="https://humanlaya.com/" target="_blank"><strong>Humanlaya AI</strong></a> as Algorithm Intern (remote) — working on training methodologies for eval-train loop research.
+          Joined <a href="https://humanlaya.com/" target="_blank"><strong>Humanlaya AI</strong></a> as an Algorithm Intern in synthetic data and evaluation. Completed my BSc at Beijing Institute of Technology.
         </div>
       </li>
       <li class="news-item">
         <div class="news-date">2026-05</div>
         <div class="news-text">
-          Submitted <em>PhysEDA</em> to <span class="venue">NeurIPS 2026</span>; preprint on <a href="https://arxiv.org/abs/2605.10547" target="_blank">arXiv</a>.
-        </div>
-      </li>
-      <li class="news-item">
-        <div class="news-date">2026-03</div>
-        <div class="news-text">
-          Joined <strong>ByteDance Seed</strong> (Foundation Model Team) as Evaluation Algorithm Intern; led the PostEvalAgent project.
+          Released the sole-author <em>PhysEDA</em> preprint on <a href="https://arxiv.org/abs/2605.10547" target="_blank">arXiv</a>.
         </div>
       </li>
       <li class="news-item">
         <div class="news-date">2026-02</div>
         <div class="news-text">
-          Attended the <em>AI Industrial Applications (AIIA)</em> program at <strong>RWTH Aachen University</strong>; discussed attention-mechanism design with senior faculty and received endorsement of the <em>"more information for weak attention"</em> framing.
+          Attended the <em>AI Industrial Applications (AIIA)</em> program at <strong>RWTH Aachen University</strong>.
         </div>
+      </li>
+      <li class="news-item">
+        <div class="news-date">2025-12</div>
+        <div class="news-text">Joined <strong>ByteDance Seed</strong> (Foundation Model Team) as an Algorithm Intern in agent evaluation.</div>
       </li>
       <li class="news-item">
         <div class="news-date">2025-09</div>
@@ -201,20 +207,21 @@
 
   <!-- ============ PUBLICATIONS ============ -->
   <div class="section" id="publications">
-    <h2><i class="fas fa-book"></i> Publications</h2>
+    <h2><i class="fas fa-book"></i> Preprints</h2>
     <div class="pub-card">
       <div class="pub-title">PhysEDA: Physics-Aware Learning Framework for Efficient EDA with Manhattan Distance Decay</div>
-      <div class="pub-authors"><span class="me">Zetao Yang</span>, Xin Shen, Lingfeng Niu, Qingna Li</div>
-      <div class="pub-venue">Submitted to <span class="venue-name">NeurIPS 2026</span> (Submission #18672, under review)</div>
+      <div class="pub-authors"><span class="me">Zetao Yang</span></div>
+      <div class="pub-venue"><span class="venue-name">arXiv preprint</span> · 2026 · Sole author</div>
       <div class="pub-links">
         <a href="https://arxiv.org/abs/2605.10547" target="_blank" class="pub-link">arXiv</a>
+        <a href="https://github.com/CoolTao-Yang/physplace-neurips2026" target="_blank" class="pub-link">Code</a>
       </div>
       <p class="pub-abstract">
         A unified physics-aware framework injecting Manhattan-distance decay into both the architecture
         (<strong>PSLA</strong> — linear attention) and the training stage (<strong>PBRS</strong> — reward shaping).
-        Achieves <strong>14× inference speedup</strong> and <strong>98.5% memory savings</strong> on 100×100 grids;
-        <strong>+49.1%</strong> on decoupling-capacitor RL placement; <strong>+56.8%</strong> zero-shot cross-scale transfer;
-        <strong>−12.0% HPWL</strong> on macro placement; <strong>+5.3–5.4%</strong> Pearson on IR-drop prediction.
+        Evaluated across decoupling-capacitor placement, macro placement, and IR-drop prediction.
+        On 100×100 grids, the PSLA encoder ran <strong>14× faster</strong> and used <strong>98.5% less memory</strong>
+        than softmax attention in the reported experiments.
       </p>
     </div>
   </div>
@@ -225,35 +232,41 @@
 
     <div class="timeline-card">
       <div class="timeline-head">
-        <div class="timeline-title"><a href="https://humanlaya.com/" target="_blank">Humanlaya AI</a> (remote)</div>
-        <div class="timeline-date">Jun 2026 – present</div>
+        <div class="timeline-title">Apodex (Shanda Group)</div>
+        <div class="timeline-date">Sep 2026 – present</div>
       </div>
-      <div class="timeline-role">Algorithm Intern (incoming)</div>
+      <div class="timeline-role">AI Scientist Intern · Singapore · Part-time, hybrid</div>
       <div class="timeline-body">
-        Joining the eval-train loop research line at Humanlaya AI — the team behind
-        <a href="https://github.com/humanlaya/OneMillion-Bench" target="_blank">$OneMillion-Bench</a>,
-        a bilingual realistic expert-level benchmark across 5 professional domains.
-        Focus: training methodologies that turn evaluation signals into capability improvements.
+        AI research and development, contributing to model training and evaluation and collaborating on AI tools and products.
+      </div>
+    </div>
+
+    <div class="timeline-card">
+      <div class="timeline-head">
+        <div class="timeline-title"><a href="https://humanlaya.com/" target="_blank">Humanlaya AI</a></div>
+        <div class="timeline-date">2026</div>
+      </div>
+      <div class="timeline-role">Algorithm Intern · Synthetic Data &amp; Evaluation</div>
+      <div class="timeline-body">
+        <ul>
+          <li>Built provenance-aware pipelines for document-based tasks and research workspaces, with source mappings and quality controls.</li>
+          <li>Designed paired text-to-file evaluations and audited trajectories and scoring rubrics to distinguish model failures from benchmark defects.</li>
+          <li>Developed schema-backed document generation and paper-to-project-to-question workflows with evidence, temporal-consistency, leakage, and rubric checks; validated outputs through independent reruns.</li>
+        </ul>
       </div>
     </div>
 
     <div class="timeline-card">
       <div class="timeline-head">
         <div class="timeline-title">ByteDance — Seed (Foundation Model Team)</div>
-        <div class="timeline-date">Dec 2025 – May 2026</div>
+        <div class="timeline-date">Dec 2025 – Jun 2026</div>
       </div>
-      <div class="timeline-role">Evaluation Algorithm Intern</div>
+      <div class="timeline-role">Algorithm Intern · Agent Evaluation</div>
       <div class="timeline-body">
         <ul>
-          <li>Led the <strong>PostEvalAgent</strong> product through three architectural transitions:
-            <em>LangChain workflow → MCP server → opencode-based sandbox (production env) → CLI for tool refresh</em>.
-            Built on a two-agent design (main orchestrator + data-retrieval sub-agent with RAG over NAS/Redis/TOS);
-            shipped 50+ analysis modules across 4 internal business lines.</li>
-          <li>Designed <strong>MPAE</strong> (Multi-Path Agent Evaluation): graph-based abstraction of agent execution
-            traces; quantified deviation from optimal paths via Conditional Transfer Entropy and Jensen–Shannon
-            divergence; failure-mode clustering with TRAIL + Weisfeiler–Lehman graph kernel.</li>
-          <li>Deep familiarity with Seed's code-agent benchmark infrastructure
-            (training-data curation, multi-turn rollout evaluation, capability regression tracking).</li>
+          <li>Developed an agent-failure taxonomy and confidence-gated trace classifier for interpretable diagnosis.</li>
+          <li>Modelled multistep traces as decision graphs, combining statistical attribution, graph-pattern mining, and targeted perturbations to investigate recurring failures.</li>
+          <li>Deployed an MCP-based post-evaluation agent with structured access to benchmark assets and modular analysis tools in a shared sandbox.</li>
         </ul>
       </div>
     </div>
@@ -265,9 +278,8 @@
       </div>
       <div class="timeline-role">Edge Large Model Algorithm Intern</div>
       <div class="timeline-body">
-        Led prompt engineering and logic-flow reconfiguration of the core product <em>IoT-Driver-Copilot</em>,
-        improving task execution efficiency by 30%+ via optimising the bidirectional protocol generation.
-        Designed and deployed a GPS digital-twin program on Raspberry Pi with two-way device/cloud sync.
+        Improved prompts and control logic for an IoT protocol-generation agent, addressing structural defects
+        in bidirectional generation. Built Raspberry Pi prototypes for GPS digital-twin synchronisation and speech-enabled retrieval.
       </div>
     </div>
 
@@ -291,9 +303,9 @@
     <div class="timeline-card">
       <div class="timeline-head">
         <div class="timeline-title">Nanyang Technological University, Singapore</div>
-        <div class="timeline-date">Aug 2026 – Aug 2027 (incoming)</div>
+        <div class="timeline-date">Aug 2026 – Feb 2028 (expected)</div>
       </div>
-      <div class="timeline-role">MSc, Signal Processing &amp; Machine Learning (with Industrial Attachment)</div>
+      <div class="timeline-role">MSc Student, Signal Processing &amp; Machine Learning · Coursework</div>
     </div>
 
     <div class="timeline-card">
@@ -332,7 +344,7 @@
   </div>
 
   <footer>
-    <p>Last updated: May 2026 · Built with vanilla HTML/CSS · Source on <a href="https://github.com/CoolTao-Yang/CoolTao-Yang.github.io" target="_blank">GitHub</a> · Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+    <p>Last updated: September 10, 2026 · Source on <a href="https://github.com/CoolTao-Yang/CoolTao-Yang.github.io" target="_blank">GitHub</a></p>
   </footer>
 
 </div>

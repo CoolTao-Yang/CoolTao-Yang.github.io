@@ -22,4 +22,4 @@ Keep biography, experience, education, news, page metadata, and the footer date 
 
 Use verified professional facts. Distinguish preprints from accepted publications, and research supervision from authorship. Keep company-internal data, employment contracts, and private contact details out of the repository.
 
-Last content update: September 10, 2026.
+Last content update: October 12, 2026. The biography and Apodex experience now reflect foundation-model pre-training and mid-training data pipelines; Humanlaya's internship dates are June–September 2026.

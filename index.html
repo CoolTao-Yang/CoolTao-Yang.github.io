@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>Zetao Yang | Personal Homepage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Zetao Yang — AI Scientist Intern at Apodex (Shanda Group) and MSc student at NTU. LLM and agent evaluation, benchmark reliability, synthetic data quality, and physics-aware learning.">
-  <meta name="keywords" content="Zetao Yang, 杨泽涛, Apodex, Shanda Group, NTU, Humanlaya, ByteDance Seed, PhysEDA, agent evaluation, benchmark reliability, synthetic data, reinforcement learning">
+  <meta name="description" content="Zetao Yang — AI Scientist Intern at Apodex (Shanda Group) and MSc student at NTU. Foundation-model pre-training and mid-training data pipelines, agent evaluation, and synthetic data quality.">
+  <meta name="keywords" content="Zetao Yang, 杨泽涛, Apodex, Shanda Group, NTU, Humanlaya, ByteDance Seed, PhysEDA, foundation models, pre-training data, mid-training, agent evaluation, synthetic data, reinforcement learning">
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -55,9 +55,13 @@
       I am an <strong>AI Scientist Intern at Apodex (Shanda Group)</strong> and an MSc student in
       <strong>Signal Processing &amp; Machine Learning</strong> at
       <a href="https://www.ntu.edu.sg/" target="_blank">Nanyang Technological University</a> in Singapore.
-      I work on evaluating LLMs and agents, understanding why they fail, and building benchmarks that produce trustworthy results.
+      I build data pipelines for foundation-model pre-training and mid-training, with a focus on
+      training-data quality, traceable releases, and corpus composition. I also work on LLM and agent evaluation,
+      failure attribution, and reproducible benchmarks.
     </p>
     <p class="bio-text">
+      At <strong>Apodex</strong>, my work covers scientific-document processing, STEM document-quality classification,
+      corpus retrieval and verification, and subject and token composition audits for training data.
       At <strong>ByteDance Seed</strong>, I developed tools for agent evaluation and failure diagnosis,
       including structured analysis of execution traces and an MCP-based post-evaluation agent.
       At <strong>Humanlaya AI</strong>, I worked on document-based task synthesis, evidence provenance,
@@ -75,8 +79,9 @@
       <div class="bio-card">
         <h4>Research Interests</h4>
         <div class="interest-tags">
+          <span class="interest-tag">Foundation Model Training Data</span>
+          <span class="interest-tag">Pre-training &amp; Mid-training</span>
           <span class="interest-tag">LLM &amp; Agent Evaluation</span>
-          <span class="interest-tag">Benchmark Reliability</span>
           <span class="interest-tag">Synthetic Data Quality</span>
           <span class="interest-tag">Reinforcement Learning</span>
           <span class="interest-tag">Linear & Efficient Attention</span>
@@ -110,17 +115,26 @@
   <div class="section" id="research">
     <h2><i class="fas fa-flask"></i> Research</h2>
     <p class="research-thesis">
-      <strong>A guiding question:</strong> How can we tell whether an agent has improved,
-      and whether the evaluation itself deserves our confidence?
+      <strong>A guiding question:</strong> How can we build training data and evaluations
+      that reliably support the development of foundation models and agents?
     </p>
     <p class="bio-text">
-      My work connects evaluation design, failure attribution, and data provenance.
-      I use controlled comparisons and reproducible workflows to separate model limitations from benchmark defects.
+      My work connects training-data quality, corpus composition, evaluation design, and failure attribution.
+      I use controlled comparisons and reproducible workflows to study data-selection methods and
+      separate model limitations from benchmark defects.
       My mathematics background also informs an interest in structured physical priors, efficient attention,
       and environment and reward design for reinforcement learning.
     </p>
     <p class="bio-text" style="margin-bottom:0;">Specific topics:</p>
     <ol class="research-list">
+      <li class="research-item">
+        <div class="research-title">Foundation-model pre-training and mid-training data</div>
+        <div class="research-desc">
+          Processing scientific documents for training, developing STEM document-quality classifiers,
+          and verifying source texts for downstream synthesis. Auditing subject and token composition,
+          with traceable releases and compatible training readers.
+        </div>
+      </li>
       <li class="research-item">
         <div class="research-title">Benchmark reliability and controlled evaluation</div>
         <div class="research-desc">
@@ -162,7 +176,7 @@
     <ul class="news-list">
       <li class="news-item">
         <div class="news-date">2026-09</div>
-        <div class="news-text">Joined <strong>Apodex (Shanda Group)</strong> as an AI Scientist Intern in Singapore.</div>
+        <div class="news-text">Joined <strong>Apodex (Shanda Group)</strong> as an AI Scientist Intern in Singapore. Completed my internship at <strong>Humanlaya AI</strong>.</div>
       </li>
       <li class="news-item">
         <div class="news-date">2026-08</div>
@@ -237,14 +251,19 @@
       </div>
       <div class="timeline-role">AI Scientist Intern · Singapore · Part-time, hybrid</div>
       <div class="timeline-body">
-        AI research and development, contributing to model training and evaluation and collaborating on AI tools and products.
+        <ul>
+          <li>Developed scientific-document processing within foundation-model pre-training and mid-training data pipelines, including post-OCR cleanup, LLM annotation, versioned releases, and compatible training readers.</li>
+          <li>Built a STEM document-quality classifier to support mid-training reasoning-data selection, comparing frozen model representations and classification heads through controlled experiments.</li>
+          <li>Built corpus-retrieval and verification workflows for source texts used in downstream synthesis and mid-training, including identity, edition, and deduplication checks.</li>
+          <li>Audited subject and token composition of mid-training corpora and implemented version-checked, reversible metadata corrections with verified readback.</li>
+        </ul>
       </div>
     </div>
 
     <div class="timeline-card">
       <div class="timeline-head">
         <div class="timeline-title"><a href="https://humanlaya.com/" target="_blank">Humanlaya AI</a></div>
-        <div class="timeline-date">2026</div>
+        <div class="timeline-date">Jun 2026 – Sep 2026</div>
       </div>
       <div class="timeline-role">Algorithm Intern · Synthetic Data &amp; Evaluation</div>
       <div class="timeline-body">
@@ -344,7 +363,7 @@
   </div>
 
   <footer>
-    <p>Last updated: September 10, 2026 · Source on <a href="https://github.com/CoolTao-Yang/CoolTao-Yang.github.io" target="_blank">GitHub</a></p>
+    <p>Last updated: October 12, 2026 · Source on <a href="https://github.com/CoolTao-Yang/CoolTao-Yang.github.io" target="_blank">GitHub</a></p>
   </footer>
 
 </div>
